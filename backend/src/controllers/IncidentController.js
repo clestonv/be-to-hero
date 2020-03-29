@@ -4,9 +4,7 @@ module.exports = {
     async index(request, response) {
         const { page = 1 } = request.query;
 
-        const [count] = await connection('incidents').count();
-
-        console.log(count);
+        const [count] = await connection('incidents').count();       
 
         const incidents = await connection('incidents')
             .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
