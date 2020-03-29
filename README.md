@@ -1,2 +1,2 @@
-# net-to-hero
+# bet-to-hero
 Projeto da Semana OminiStack11
